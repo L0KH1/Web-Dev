@@ -1,24 +1,17 @@
-    
-var options = {
-  series: [44, 55, 13, 43, 22],
-  chart: {
-  width: 380,
-  type: 'pie',
-},
-labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
-responsive: [{
-  breakpoint: 480,
-  options: {
-    chart: {
-      width: 200
+new Chart(document.getElementById("pie-chart"), {
+    type: 'pie',
+    data: {
+      labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+      datasets: [{
+        label: "Population (millions)",
+        backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+        data: [2478,5267,734,784,433]
+      }]
     },
-    legend: {
-      position: 'bottom'
+    options: {
+      title: {
+        display: true,
+        text: 'Predicted world population (millions) in 2050'
+      }
     }
-  }
-}]
-};
-
-var chart = new ApexCharts(document.querySelector("#chart"), options);
-chart.render();
-      
+});
