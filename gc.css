@@ -1,4 +1,4 @@
-body {
+ body {
     background: #2e2e2e;
     font-family: 'Playfair Display', serif;
 }
@@ -127,6 +127,6 @@ h1{
     }
 }
 
-
-
-
+.portfolio-nav-style{
+    background: #2e2e2e;
+}
