@@ -1,0 +1,132 @@
+body {
+    background: #2e2e2e;
+    font-family: 'Playfair Display', serif;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 100;
+    font-color: white;
+}
+
+.blurb h2 {
+   color: white;
+   font-weight: 100;
+   font-size: 2.5rem;
+}
+
+.blurb p {
+    color: white;
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#mainNavbar {
+    font-size: 1.75rem;
+    font-weight: 100;    
+}
+
+#mainNavbar .nav-link {
+    color: #0DA2FF;
+}
+
+#mainNavbar .nav-link:hover {
+    color: white;
+}
+
+#mainNavbar .navbar-brand {
+    color: #0DA2FF;
+    font-size: 2rem;
+}
+
+#headingGroup span {
+    color: #EA1C2C;
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.part1 {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    background: rgba(60,60,60,.4);
+}
+
+.part2b {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
+
+.part2 {
+    margin-top: 25px;
+}
+
+#part2 {
+    background: rgba(100,100,100,.7);
+}
+
+.background2 {
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.part2-img{
+    max-width:50%;
+    height: auto;
+    padding: .5rem;
+}
+
+#simons {
+    filter:brightness(1.5);
+}
+
+#aristotle {
+    filter:brightness(1.25);
+}
+
+.navbar.scrolled {
+    color: white;
+    background: rgba(60,60,60,.9);
+    transition: background 500ms;
+}
+
+.btn.btn-default {
+    color: white;
+    background-color: rgba(0,0,0,0)
+}
+
+.btn.btn-default:hover {
+    background-color: #0DA2FF;
+}
+
+.form-padder{
+    padding: 5rem;
+}
+
+.form-color{
+    font-color: white;
+}
+
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+    .blurb h2 {
+        font-size: 2rem;
+    }
+}
+
+
+
+
