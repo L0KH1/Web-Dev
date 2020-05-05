@@ -1,6 +1,7 @@
  body {
     background: #2e2e2e;
-    font-family: 'Playfair Display', serif;
+    /*font-family: 'Playfair Display', serif;*/
+    font-family: apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
 }
 
 h1{
@@ -29,19 +30,20 @@ h1{
 
 #mainNavbar {
     font-size: 1.75rem;
-    font-weight: 100;    
+    font-weight: 100;
+    /*background: ;*/
 }
 
 #mainNavbar .nav-link {
-    color: #0DA2FF;
-}
-
-#mainNavbar .nav-link:hover {
     color: white;
 }
 
+#mainNavbar .nav-link:hover {
+    color: rgb(251, 208, 95);
+}
+
 #mainNavbar .navbar-brand {
-    color: #0DA2FF;
+    color: white;
     font-size: 2rem;
 }
 
@@ -78,6 +80,7 @@ h1{
 .background2 {
     background-size: 100% 100%;
     background-attachment: fixed;
+    background-size:cover;
 }
 
 .part2-img{
@@ -96,7 +99,7 @@ h1{
 
 .navbar.scrolled {
     color: white;
-    background: rgba(60,60,60,.9);
+    background: rgba(60,60,60,.5);
     transition: background 500ms;
 }
 
@@ -128,5 +131,5 @@ h1{
 }
 
 .portfolio-nav-style{
-    background: #2e2e2e;
+    background: rgba(0,0,0,.3);
 }
