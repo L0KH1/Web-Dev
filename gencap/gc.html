@@ -22,31 +22,33 @@
 <body>
 	<!-- NAVBAR  -->
     <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top portfolio-nav-style">
-        <a href="#" class="navbar-brand">GenCap</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse flex-grow-0" id="navLinks">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="" class="nav-link">Approach</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/Users/lukea/Documents/GitHub/Web-Dev/gc-portfolio.html" class="nav-link">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Our Team</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Research</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Investors</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Contact</a>
-                </li>
-            </ul>
+    	<div class="container nav-bg-img" style="background-image: url('imgs/mountainbackground.jpg');">
+	        <a href="#" class="navbar-brand">GenCap</a>
+	        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+	            <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="collapse navbar-collapse flex-grow-0" id="navLinks">
+	            <ul class="navbar-nav">
+	                <li class="nav-item">
+	                    <a href="" class="nav-link">Approach</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a href="/Users/lukea/Documents/GitHub/Web-Dev/gc-portfolio.html" class="nav-link">Portfolio</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a href="" class="nav-link">Our Team</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a href="" class="nav-link">Research</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a href="" class="nav-link">Investors</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a href="" class="nav-link">Contact</a>
+	                </li>
+	            </ul>
+	        </div>
         </div>
     </nav>
 
@@ -191,15 +193,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
-    <!-- JavaScript -->
-    <script>
-        $(function () {
-            $(document).scroll(function () {
-                var $nav = $("#mainNavbar");
-                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-            });
-        });
-    </script>
 </body>
 
 </html>

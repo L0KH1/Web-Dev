@@ -31,7 +31,6 @@ h1{
 #mainNavbar {
     font-size: 1.75rem;
     font-weight: 100;
-    /*background: ;*/
 }
 
 #mainNavbar .nav-link {
@@ -45,6 +44,15 @@ h1{
 #mainNavbar .navbar-brand {
     color: white;
     font-size: 2rem;
+    background-color: black;
+}
+
+.nav-bg-img{
+    background-image: "mountainbackground.png"
+}
+
+.portfolio-nav-style{
+    background-color: black;
 }
 
 #headingGroup span {
@@ -128,8 +136,4 @@ h1{
     .blurb h2 {
         font-size: 2rem;
     }
-}
-
-.portfolio-nav-style{
-    background: rgba(0,0,0,.3);
 }
