@@ -1,4 +1,4 @@
- body {
+body {
     background: #2e2e2e;
     /*font-family: 'Playfair Display', serif;*/
     font-family: apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
@@ -28,31 +28,35 @@ h1{
     margin-bottom: 100px;
 }
 
+.navWrapper{
+    background-image: url("mountainbackground.png") !important;
+    background-size: 50% 50%;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    height: 100px;
+    padding-bottom: 50px;
+}
+
 #mainNavbar {
     font-size: 1.75rem;
     font-weight: 100;
+    background-color: black;
 }
 
 #mainNavbar .nav-link {
     color: white;
+    background-color:black;
+    position: top;
 }
 
 #mainNavbar .nav-link:hover {
     color: rgb(251, 208, 95);
+    font-weight:bold;
 }
 
 #mainNavbar .navbar-brand {
     color: white;
     font-size: 2rem;
-    background-color: black;
-}
-
-.nav-bg-img{
-    background-image: "mountainbackground.png"
-}
-
-.portfolio-nav-style{
-    background-color: black;
 }
 
 #headingGroup span {
@@ -68,7 +72,7 @@ h1{
     position: absolute;
     top: 30%;
     width: 100%;
-    background: rgba(60,60,60,.7);
+    background: black;
 }
 
 .part2b {
@@ -82,7 +86,7 @@ h1{
 }
 
 #part2 {
-    background: rgba(100,100,100,.9);
+    background: black;
 }
 
 .background2 {
