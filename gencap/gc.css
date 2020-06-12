@@ -1,6 +1,5 @@
 body {
     background: #2e2e2e;
-    /*font-family: 'Playfair Display', serif;*/
     font-family: apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
 }
 
@@ -130,6 +129,13 @@ h1{
 
 .form-color{
     font-color: white;
+}
+
+/*LOGIN PAGE*/
+
+.login-background{
+     background-image: url('imgs/login.JPG') !important;
+     background-size:cover;
 }
 
 @media (max-width: 1200px) {
