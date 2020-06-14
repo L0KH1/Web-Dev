@@ -57,6 +57,10 @@ h1{
     color: white;
     font-size: 2rem;
 }
+/*Navbar dropdown background*/
+.nav-bckg{
+    background-color: blue !important;
+}
 
 #headingGroup span {
     color: #EA1C2C;
@@ -92,6 +96,21 @@ h1{
     background-size: 100% 100%;
     background-attachment: fixed;
     background-size:cover;
+}
+
+#sharptop {
+    background-image: url('imgs/sharptop.jpg');
+    background-position: center center;
+}
+
+#mainstreet {
+    background-image: url('imgs/mainst.jpg');
+    background-position: center center;
+}
+
+#compass {
+    background-image: url('imgs/compass.jpg');
+    background-position: center center;
 }
 
 .part2-img{
