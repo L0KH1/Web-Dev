@@ -2,19 +2,19 @@
 <html>
 <head>
     <!-- GenCap Icon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="imgs/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="imgs/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="imgs/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="imgs/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="imgs/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="imgs/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="imgs/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="imgs/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="imgs/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="imgs/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -38,13 +38,13 @@
 </head>
 <body>
 	<!-- NAVBAR  -->
-    <nav id="mainNavbar" class="navWrapper navbar navbar-expand-md py-10000 fixed-top">
+    <nav id="mainNavbar" class="navWrapper navbar navbar-dark navbar-expand-md py-10000 fixed-top">
         <a href="index.html" class="navbar-brand"><strong>GenCap</strong></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse flex-grow-0" id="navLinks">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav nav-bckg">
                 <li class="nav-item">
                     <a href="gc-approach.html" class="nav-link">Approach</a>
                 </li>
@@ -67,16 +67,18 @@
 	<div class="row border justify-content-around align-items-center background2" style="background-image: url('imgs/building.jpg');">
 
 		<!--Title-->
-		<div class="col-12 text-center">
-			<p>&nbsp</p><p>&nbsp</p>
-			<h1 class="part1 text-white text-center d-none d-lg-block mt-5 position-absolute">Portfolio Breakdown</h1>
-			<p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p>
-		</div>
+        <div class="col-sm-12 text-center mt-5 p-5" >
+            <div class="row justify-content-center">
+                <div class="col-10 col-lg-8 blurb">
+                    <h1>Portfolio Breakdown</h1>
+                </div>
+            </div>
+        </div>
 
 		<!-- TOTAL ALLOCATION (Equities, Cash, Options, Futures, Currency) -->
-        <div class="col-sm-12 text-center" >
+        <div class="col-sm-12 text-center mt-5" >
             <div class="row justify-content-center">
-                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0" id="part2">
+                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
                     <h2>Total Allocation</h2>
                     <canvas id="total-allocation" width="800" height="450"></canvas>
                     <p>&nbsp</p>
@@ -89,7 +91,7 @@
    	    <!-- EQUITY ALLOCATION BY SECTOR -->
         <div class="col-sm-12 text-center">
             <div class="row justify-content-center">
-                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0" id="part2">
+                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
                     <h2>Equity Breakdown by Sector</h2>
                     <canvas id="by-sector" width="800" height="450"></canvas>
                     <p>&nbsp</p>
@@ -103,7 +105,7 @@
         <!--Media-->
         <div class="col-sm-4 text-center" >
             <div class="row justify-content-center">
-                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0" id="part2">
+                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
                     <h2>Media</h2>
                     <p>Stock 1: 25%<br>Stock 2: 25%<br>Stock 3: 25%<br>Stock 4: 25%</p>
                     <p>&nbsp</p>
@@ -114,7 +116,7 @@
         
         <div class="col-sm-4 text-center" >
             <div class="row justify-content-center">
-                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0" id="part2">
+                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
                     <h2>Consumer Discretionary</h2>
                     <p>Stock 1: 25%<br>Stock 2: 25%<br>Stock 3: 25%<br>Stock 4: 25%</p>
                     <p>&nbsp</p>
@@ -125,7 +127,7 @@
         
         <div class="col-sm-4 text-center" >
             <div class="row justify-content-center">
-                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0" id="part2">
+                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
                     <h2>Consumer Staples</h2>
                     <p>Stock 1: 25%<br>Stock 2: 25%<br>Stock 3: 25%<br>Stock 4: 25%</p>
                     <p>&nbsp</p>
@@ -137,7 +139,7 @@
         
         <div class="col-sm-4 text-center" >
             <div class="row justify-content-center">
-                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0" id="part2">
+                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
                     <h2>Energy</h2>
                     <p>Stock 1: 25%<br>Stock 2: 25%<br>Stock 3: 25%<br>Stock 4: 25%</p>
                     <p>&nbsp</p>
@@ -148,7 +150,7 @@
         
         <div class="col-sm-4 text-center" >
             <div class="row justify-content-center">
-                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0" id="part2">
+                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
                     <h2>Financials</h2>
                     <p>Stock 1: 25%<br>Stock 2: 25%<br>Stock 3: 25%<br>Stock 4: 25%</p>
                     <p>&nbsp</p>
@@ -159,7 +161,7 @@
         
         <div class="col-sm-4 text-center" >
             <div class="row justify-content-center">
-                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0" id="part2">
+                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
                     <h2>Healthcare</h2>
                     <p>Stock 1: 25%<br>Stock 2: 25%<br>Stock 3: 25%<br>Stock 4: 25%</p>
                     <p>&nbsp</p>
@@ -171,7 +173,7 @@
         
         <div class="col-sm-4 text-center" >
             <div class="row justify-content-center">
-                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0" id="part2">
+                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
                     <h2>Industrials</h2>
                     <p>Stock 1: 25%<br>Stock 2: 25%<br>Stock 3: 25%<br>Stock 4: 25%</p>
                     <p>&nbsp</p>
@@ -182,7 +184,7 @@
         
         <div class="col-sm-4 text-center" >
             <div class="row justify-content-center">
-                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0" id="part2">
+                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
                     <h2>Technology</h2>
                     <p>Stock 1: 25%<br>Stock 2: 25%<br>Stock 3: 25%<br>Stock 4: 25%</p>
                     <p>&nbsp</p>
@@ -193,7 +195,7 @@
         
         <div class="col-sm-4 text-center" >
             <div class="row justify-content-center">
-                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0" id="part2">
+                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
                     <h2>Materials</h2>
                     <p>Stock 1: 25%<br>Stock 2: 25%<br>Stock 3: 25%<br>Stock 4: 25%</p>
                     <p>&nbsp</p>
@@ -205,7 +207,7 @@
         
         <div class="col-sm-4 text-center" >
             <div class="row justify-content-center">
-                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0" id="part2">
+                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
                     <h2>Real Estate</h2>
                     <p>Stock 1: 25%<br>Stock 2: 25%<br>Stock 3: 25%<br>Stock 4: 25%</p>
                     <p>&nbsp</p>
@@ -216,7 +218,7 @@
         
         <div class="col-sm-4 text-center" >
             <div class="row justify-content-center">
-                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0" id="part2">
+                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
                     <h2>Utilities</h2>
                     <p>Stock 1: 25%<br>Stock 2: 25%<br>Stock 3: 25%<br>Stock 4: 25%</p>
                     <p>&nbsp</p>
@@ -229,6 +231,19 @@
 			<p>&nbsp</p><p>&nbsp</p><p>&nbsp</p>
 		</div>
     </div>
+
+    <!-- Padding At Bottom of Page-->
+    <section class="container-fluid px-0">
+        <div class="row justify-content-center">
+            <div class="col-md-7 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                        <p>2020 - La Selva Software, LLC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

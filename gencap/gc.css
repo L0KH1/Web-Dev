@@ -4,9 +4,14 @@ body {
 }
 
 h1{
-    font-size: 4rem;
-    font-weight: 100;
-    font-color: white;
+    font-size: 3em;
+    font-weight: 300;
+    color: white;
+}
+h4 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 .blurb h2 {
@@ -71,11 +76,38 @@ h1{
     font-size: 4rem;
 }
 
+/************************************************************* CAROUSEL ******************************************************/
+.carousel {
+    height: 70vh !important;
+}
+.carousel-caption {
+  transform: translateY(-50%);
+  bottom: 0;
+  top: 50%;
+}
+
+.carousel-item:hover h1{
+    color: rgb(251, 208, 95);
+    font-weight:bold;
+}
+.carousel-item:hover h4{
+    color: white;
+    font-weight:bold;
+}
+.carousel-inner {
+    height: 70vh;
+}
+.carousel-inner img{
+    min-height: 70vh !important;
+}
+.carousel-fit {
+    background-repeat:repeat;
+}
+
 .part1 {
     position: absolute;
     top: 30%;
     width: 100%;
-    background: black;
 }
 
 .part2b {
@@ -89,7 +121,7 @@ h1{
 }
 
 #part2 {
-    background: black;
+    background-color: rgba(0,0,0,.4);
 }
 
 .background2 {
@@ -103,14 +135,24 @@ h1{
     background-position: center center;
 }
 
+#compass {
+    background-image: url('imgs/compass.jpg');
+    background-position: center center;
+}
+
+/***************************************************************** WHAT WE DO ***********************************************/
 #mainstreet {
     background-image: url('imgs/mainst.jpg');
     background-position: center center;
 }
 
-#compass {
-    background-image: url('imgs/compass.jpg');
-    background-position: center center;
+#mainstreet:hover h1{
+    color: rgb(251, 208, 95);
+    font-weight:bold;
+}
+.heads:hover h2{
+    color: rgb(251, 208, 95);
+    font-weight:bold;
 }
 
 .part2-img{
@@ -155,6 +197,11 @@ h1{
 .login-background{
      background-image: url('imgs/login.JPG') !important;
      background-size:cover;
+}
+
+#compass:hover h1{
+    color: rgb(251, 208, 95);
+    font-weight:bold;
 }
 
 @media (max-width: 1200px) {
