@@ -6,7 +6,7 @@ body {
 h1{
     font-size: 3em;
     font-weight: 300;
-    color: white;
+    color: #fff !important;
 }
 h4 {
     color: white;
@@ -124,12 +124,6 @@ h4 {
     background-color: rgba(0,0,0,.4);
 }
 
-.background2 {
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    background-size:cover;
-}
-
 #sharptop {
     background-image: url('imgs/sharptop.jpg');
     background-position: center center;
@@ -203,6 +197,22 @@ h4 {
     color: rgb(251, 208, 95);
     font-weight:bold;
 }
+
+/************************************************************* BACKGROUNDS ****************************************************/
+.repeatyo {
+    background-size: auto;
+    background-repeat: repeat;
+}
+#repeat1 {
+    background-image:url('imgs/rptbackground.jpg')
+}
+#repeat2 {
+    background-image:url('imgs/rptbackground2.jpg')
+}
+#repeat3 {
+    background-image:url('imgs/rptbackground3.jpg')
+}
+
 
 @media (max-width: 1200px) {
     #headingGroup h1 {
