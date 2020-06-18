@@ -88,11 +88,9 @@ h4 {
 
 .carousel-item:hover h1{
     color: rgb(251, 208, 95);
-    font-weight:bold;
 }
 .carousel-item:hover h4{
     color: white;
-    font-weight:bold;
 }
 .carousel-inner {
     height: 70vh;
@@ -132,6 +130,7 @@ h4 {
 #compass {
     background-image: url('imgs/compass.jpg');
     background-position: center center;
+    background-size: cover;
 }
 
 /***************************************************************** WHAT WE DO ***********************************************/
@@ -141,12 +140,11 @@ h4 {
 }
 
 #mainstreet:hover h1{
-    color: rgb(251, 208, 95);
+    color: rgb(251, 208, 95) !important;
     font-weight:bold;
 }
 .heads:hover h2{
     color: rgb(251, 208, 95);
-    font-weight:bold;
 }
 
 .part2-img{
@@ -194,7 +192,7 @@ h4 {
 }
 
 #compass:hover h1{
-    color: rgb(251, 208, 95);
+    color: rgb(251, 208, 95) !important;
     font-weight:bold;
 }
 
@@ -210,7 +208,7 @@ h4 {
     background-image:url('imgs/rptbackground2.jpg')
 }
 #repeat3 {
-    background-image:url('imgs/rptbackground3.jpg')
+    background-image:url('imgs/teambackground.jpg')
 }
 
 
