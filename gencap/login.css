@@ -1,17 +1,57 @@
+/*Login Stuff*/
+.login-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.login-logo{
+    position: relative;
+    margin-left: -41.5%;
+}
+.login-logo img{
+    position: absolute;
+    width: 20%;
+    margin-top: 19%;
+    background: #282726;
+    border-radius: 4.5rem;
+    padding: 5%;
+}
+.login-form-1{
+    padding: 9%;
+    background:#282726;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.btnSubmit{
+    font-weight: 600;
+    width: 50%;
+    color: #282726;
+    background-color: #fff;
+    border: none;
+    border-radius: 1.5rem;
+    padding:2%;
+}
+.btnForgetPwd{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.btnForgetPwd:hover{
+    text-decoration:none;
+    color:#fff;
+}
+
+/* End of Login stuff*/
+
 body {
+    padding-top: 100px;
     background: #2e2e2e;
+    /*font-family: 'Playfair Display', serif;*/
     font-family: apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
 }
 
 h1{
-    font-size: 3em;
-    font-weight: 300;
-    color: white;
-}
-h4 {
-    color: white;
-    font-weight: bold;
-    font-size: 1.1em;
+    font-size: 4rem;
+    font-weight: 100;
+    font-color: white;
 }
 
 .blurb h2 {
@@ -62,10 +102,6 @@ h4 {
     color: white;
     font-size: 2rem;
 }
-/*Navbar dropdown background*/
-.nav-bckg{
-    background-color: blue !important;
-}
 
 #headingGroup span {
     color: #EA1C2C;
@@ -76,38 +112,11 @@ h4 {
     font-size: 4rem;
 }
 
-/************************************************************* CAROUSEL ******************************************************/
-.carousel {
-    height: 70vh !important;
-}
-.carousel-caption {
-  transform: translateY(-50%);
-  bottom: 0;
-  top: 50%;
-}
-
-.carousel-item:hover h1{
-    color: rgb(251, 208, 95);
-    font-weight:bold;
-}
-.carousel-item:hover h4{
-    color: white;
-    font-weight:bold;
-}
-.carousel-inner {
-    height: 70vh;
-}
-.carousel-inner img{
-    min-height: 70vh !important;
-}
-.carousel-fit {
-    background-repeat:repeat;
-}
-
 .part1 {
     position: absolute;
     top: 30%;
     width: 100%;
+    background: black;
 }
 
 .part2b {
@@ -121,38 +130,13 @@ h4 {
 }
 
 #part2 {
-    background-color: rgba(0,0,0,.4);
+    background: black;
 }
 
 .background2 {
     background-size: 100% 100%;
     background-attachment: fixed;
     background-size:cover;
-}
-
-#sharptop {
-    background-image: url('imgs/sharptop.jpg');
-    background-position: center center;
-}
-
-#compass {
-    background-image: url('imgs/compass.jpg');
-    background-position: center center;
-}
-
-/***************************************************************** WHAT WE DO ***********************************************/
-#mainstreet {
-    background-image: url('imgs/mainst.jpg');
-    background-position: center center;
-}
-
-#mainstreet:hover h1{
-    color: rgb(251, 208, 95);
-    font-weight:bold;
-}
-.heads:hover h2{
-    color: rgb(251, 208, 95);
-    font-weight:bold;
 }
 
 .part2-img{
@@ -190,18 +174,6 @@ h4 {
 
 .form-color{
     font-color: white;
-}
-
-/*LOGIN PAGE*/
-
-.login-background{
-     background-image: url('imgs/login.JPG') !important;
-     background-size:cover;
-}
-
-#compass:hover h1{
-    color: rgb(251, 208, 95);
-    font-weight:bold;
 }
 
 @media (max-width: 1200px) {

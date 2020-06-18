@@ -1,7 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <!-- GenCap Icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="imgs/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="imgs/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="imgs/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="imgs/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="imgs/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="imgs/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="imgs/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="imgs/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="imgs/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="imgs/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,74 +39,112 @@
 
 <body>
 	<!-- NAVBAR  -->
-    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top portfolio-nav-style">
-        <a href="#" class="navbar-brand">GenCap</a>
+    <nav id="mainNavbar" class="navWrapper navbar navbar-dark navbar-expand-md py-10000 fixed-top">
+        <a href="index.html" class="navbar-brand"><strong>GenCap</strong></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse flex-grow-0" id="navLinks">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav nav-bckg">
                 <li class="nav-item">
-                    <a href="" class="nav-link">Approach</a>
+                    <a href="gc-approach.html" class="nav-link">Approach</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/Users/lukea/Documents/GitHub/Web-Dev/gc-portfolio.html" class="nav-link">Portfolio</a>
+                    <a href="gc-portfolio.html" class="nav-link">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Our Team</a>
+                    <a href="gc-team.html" class="nav-link">Our Team</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Research</a>
+                    <a href="index.html#contacttag" class="nav-link">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Investors</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Contact</a>
+                    <a href="gc-login.html" class="nav-link">Member Login</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-	<!--Part 1-->
-    <div class="container-fluid background2" p-0 style="background-image: url('imgs/sharptop.jpg');">
-	    <section class="row no-gutters align-items-center">
-	    	<div class="col-12 text-center">
-				<p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p>
-			</div>	
-	        <div class="col-lg-12 text-center d-flex">
-	            <!--img class="img-fluid of" src="imgs/background.jpg" alt=""-->
-	            <h1 class="part1 text-white text-center d-none d-lg-block mt-5 position-absolute">General Capital Partners, LLC</h4>	            
-	        </div>
-	        <div class="col-12 text-center">
-				<p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p>
-				<p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p>
-			</div>	
-	    </section>
-	</div>
+
+	<!---------------------------------------------------------- Carousel ------------------------------------------------------------>
+
+    <section class="container-fluid px-0">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="overflow:hidden">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 carousel-fit" src="imgs/blueridge.jpg" alt="First slide">
+                            <div class="container">
+                                <div class="carousel-caption text-center">
+                                    <h1>New Market. New Methods.</h1>
+                                    <h4> Not settling to simply perform with the market, we operate with new strategies and new tactics to beat the market. When the market paradigm changes, you can sure as hell know we're right there with it.
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="imgs/forest.jpg" alt="Second slide">
+                            <div class="container">
+                                <div class="carousel-caption text-center">
+                                    <h1>Ditching Flawed Orthodoxy.</h1>
+                                    <h4>Fund managers as a whole have failed to consistently deliver market-beating returns to their investors. Subsequently, investors have been fleeing to ETFs at historic levels. Market-beating returns do not lie with the old Wall Street orthodoxy and neither do we.
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="imgs/sharptop.jpg" alt="Third slide">
+                            <div class="container">
+                                <div class="carousel-caption text-center">
+                                    <h1>Investing, Evolved.</h1>
+                                    <h4>We integrate fundamental and quantitative methods to respond to the profound changes that have occurred in markets over the past decade. We are nothing less than the next evolution of investors entering the market based on how it acts now, not how it used to act, or should act.
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
-	<!------------------------------------------------------------------------------- PART 2 ------------------------------------------------------------------->
+	<!-------------------------------------------------- WHAT WE DO ----------------------------------------------------------------->
 
 
-	<div class="row border justify-content-around align-items-center background2" style="background-image: url('imgs/mainst.jpg');">
+	<div class="row border justify-content-around align-items-center background2" id="mainstreet">
 
-		<!--Padding-->
-		<div class="col-12 text-center">
-			<p>&nbsp</p><p>&nbsp</p>
-			<h1 class="part2b text-white text-center d-none d-lg-block mt-5 position-absolute">What We Do</h1>
-			<p>&nbsp</p><p>&nbsp</p><p>&nbsp</p>
-		</div>
+		<!-- Title -->
+        <div class="col-sm-12 text-center mt-5 mb-5" id="whatwedo">
+            <div class="row justify-content-center">
+                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                    <h1>What We Do</h1>
+                </div>
+            </div>
+        </div>
 
 		<!--Growth Investing-->
         <div class="col-sm-4 text-center" >
             <div class="row justify-content-center">
-                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0" id="part2">
+                <div class="heads col-10 col-lg-8 blurb mb-5 mb-md-0" id="part2">
                     <h2>Growth Investing</h2>
                     <img src="imgs/buffet_bw.png" alt="" class="img-fluid part2-img">
-                    <p  class="lead">GenCap is focused on integrating geopolitical, economic, environmental, and fundamental analyses into a single coherent
-                    				vision to guide portfolio tactics for the coming 24 months.</p>
+                    <h4>GenCap is focused on integrating geopolitical, economic, environmental, and fundamental analyses into a single coherent vision to guide portfolio tactics for the coming 24 months.</h4>
                 </div>
             </div>
         </div>
@@ -96,11 +152,11 @@
         <!--Quant-->
         <div class="col-sm-4 text-center">
             <div class="row justify-content-center">
-                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0" id="part2">
+                <div class="heads col-10 col-lg-8 blurb mb-5 mb-md-0" id="part2">
                     <h2>Quantitative Portfolio Management</h2>
                     <img src="imgs/jimsimons-bw.jpg" id = "simons" alt="" class="img-fluid part2-img">
-                    <p class="lead">GenCap utilizes a set of computer programs known as "Blindside Bots" each which are individually tailored to sell
-                    				individual positions if certain conditions unique to that holding are detected by the program.</p>
+                    <h4>GenCap utilizes a set of computer programs which are individually tailored to sell
+                    				individual positions if certain conditions unique to that holding are detected by the program.</h4>
                 </div>
             </div>
         </div>
@@ -108,14 +164,11 @@
         <!--Research-->
         <div class="col-sm-4 text-center">
             <div class="row justify-content-center">
-                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0" id="part2">
+                <div class="heads col-10 col-lg-8 blurb mb-5 mb-md-0" id="part2">
                     <h2>Research</h2>
                     <img src="imgs/aristotle.jpg" id = "aristotle" alt="" class="img-fluid part2-img">
-                    <p class="lead">Each quarter, our team releases a comprehensive investment outlook for the months ahead. We come to our theses by 
-                    				analyzing the behavior of the global macroeconomy, and logically work down to how this affects certain geographies, 
-                        			industries, sectors, sub-sectors, and companies. This report covers GenCap'sown holdings as well as assessing potential 
-                        			areas for future investment.
-            		</p>
+                    <h4>Each quarter, our team releases a comprehensive investment outlook for the months ahead. We come to our theses by analyzing the behavior of the global macroeconomy, and logically work down to how this affects certain geographies, industries, sectors, sub-sectors, and companies.
+            		</h4>
                 </div>
             </div>
         </div>
@@ -129,17 +182,19 @@
 
 
 
-    <!------------------------------------------------------------------------------- PART 3 ------------------------------------------------------------------->
+    <!----------------------------------------------------- LOGIN ------------------------------------------------------------------->
 
 
-	<div class="row border justify-content-around align-items-center background2" style="background-image: url('imgs/compass.jpg');">
-		<div class="col-12 text-center">
-			<p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p>
-			<h1 class="part2b text-white text-center d-none d-lg-block mt-5 position-absolute">Get in Touch</h1>
-			<p>&nbsp</p><p>&nbsp</p><p>&nbsp</p>
-		</div>
+	<div id="compass" class="row border justify-content-around align-items-center background2 mb-5">
+		<div class="col-sm-12 text-center mt-5 mb-5" >
+            <div class="row justify-content-center">
+                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                    <h1>Get in Touch</h1>
+                </div>
+            </div>
+        </div>
 
-		<div id="part2" class="align-items-center">
+		<div class="align-items-center">
 			<form class="form-inline form-padder">
 			  <div class="form-group">
 			    <font color="white">Name&nbsp&nbsp&nbsp&nbsp</font>
@@ -162,26 +217,21 @@
             </div>
             <p>&nbsp</p>
 		</div>
-
-		<!--Padding-->
-        <div class="col-12 text-center">
-			<p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p>
-		</div>
 	</div>
+    <!-- Padding At Bottom of Page-->
+    <section class="container-fluid px-0">
+        <div class="row justify-content-center">
+            <div class="col-md-7 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                        <p>2020 - La Selva Software, LLC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Padding At Bottom of Page-->
-	<section class="container-fluid px-0">
-		<div class="row justify-content-center">
-	    	<div class="col-md-7 text-center">
-	            <div class="row justify-content-center">
-	                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
-	                	<p>&nbsp</p><p>&nbsp</p>
-	                	<p>2020 - La Selva Software, LLC</p><p>&nbsp</p>
-                	</div>
-            	</div>
-        	</div>
-    	</div>
-	</section>
+	
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -191,15 +241,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
-    <!-- JavaScript -->
-    <script>
-        $(function () {
-            $(document).scroll(function () {
-                var $nav = $("#mainNavbar");
-                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-            });
-        });
-    </script>
 </body>
 
 </html>
