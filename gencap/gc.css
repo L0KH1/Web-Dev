@@ -201,14 +201,14 @@ h4 {
     background-size: auto;
     background-repeat: repeat;
 }
-#repeat1 {
-    background-image:url('imgs/rptbackground.jpg')
+.repeat1 {
+    background-image:url('./imgs/rptbackground.jpg')
 }
-#repeat2 {
-    background-image:url('imgs/rptbackground2.jpg')
+.repeat2 {
+    background-image:url('./imgs/rptbackground2.jpg')
 }
-#repeat3 {
-    background-image:url('imgs/teambackground.jpg')
+.repeat3 {
+    background-image:url('./imgs/teambackground.jpg')
 }
 
 
