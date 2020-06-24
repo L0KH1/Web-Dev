@@ -32,6 +32,12 @@ h4 {
     margin-bottom: 100px;
 }
 
+/* Logo sizing */
+.responsive{
+    max-width: 5%;
+    height: auto;
+}
+
 .navWrapper{
     background-image: url("mountainbackground.png") !important;
     background-size: 50% 50%;
@@ -44,12 +50,12 @@ h4 {
 #mainNavbar {
     font-size: 1.75rem;
     font-weight: 100;
-    background-color: black;
+    background-color: white;
 }
 
 #mainNavbar .nav-link {
     color: white;
-    background-color:black;
+    background-color: white;
     position: top;
 }
 
