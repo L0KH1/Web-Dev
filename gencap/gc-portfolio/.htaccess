@@ -1,4 +1,4 @@
 AuthType Basic  
 AuthName "Restricted Area - Obscene Gains"  
 AuthUserFile /home/yr0j4t4g30hg/public_html/gc-portfolio/.htpasswd
-require valid-user
+require user-general
