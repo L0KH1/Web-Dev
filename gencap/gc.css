@@ -202,13 +202,13 @@ h4 {
     background-repeat: repeat;
 }
 #repeat1 {
-    background-image:url('imgs/rptbackground.jpg')
+    background-image:url('imgs/rptbackground.jpg') !important;
 }
 #repeat2 {
-    background-image:url('imgs/rptbackground2.jpg')
+    background-image:url('imgs/rptbackground2.jpg') !important;
 }
 #repeat3 {
-    background-image:url('imgs/teambackground.jpg')
+    background-image:url('imgs/teambackground.jpg') !important;
 }
 
 
