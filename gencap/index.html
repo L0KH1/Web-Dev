@@ -24,8 +24,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Google Font -->
+    <!-- Font for body -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <!-- Font for navbar -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
@@ -34,29 +37,39 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="gc.css">
 
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
     <title>General Capital Partners, LLC</title>
 </head>
 
 <body>
 	<!-- NAVBAR  -->
-    <nav id="mainNavbar" class="navWrapper navbar navbar-dark navbar-expand-md py-10000 fixed-top">
-        <a href="index.html" class="navbar-brand"><img src="imgs/logo.jpeg" class="responsive">a</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+    <nav id="mainNavbar" class="navWrapper navbar navbar-dark navbar-expand-md py-10000 fixed-top navbar-left">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation" id="toggleit">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <a href="#" class="navbar-brand"></a><img src="imgs/logo.jpeg" class="responsive">
+
         <div class="collapse navbar-collapse flex-grow-0" id="navLinks">
-            <ul class="navbar-nav nav-bckg">
+            <ul class="navbar-nav nav-bckgh navbar-left">
                 <li class="nav-item">
-                    <a href="gc-approach.html" class="nav-link">Approach</a>
+                    <a href="index.html" class="nav-link">MAIN</a>
                 </li>
                 <li class="nav-item">
-                    <a href="gc-portfolio/gc-portfolio.html" class="nav-link">Portfolio</a>
+                    <a href="gc-approach.html" class="nav-link">PRINCIPLES & CULTURE</a>
                 </li>
                 <li class="nav-item">
-                    <a href="gc-team.html" class="nav-link">Our Team</a>
+                    <a href="gc-approach.html" class="nav-link">RESEARCH & INSIGHTS</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html#contacttag" class="nav-link">Contact</a>
+                    <a href="gc-portfolio/gc-portfolio.html" class="nav-link">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gc-team.html" class="nav-link">OUR TEAM</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contacttag" class="nav-link">CONTACT</a>
                 </li>
             </ul>
         </div>
@@ -96,9 +109,9 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="imgs/sharptop.jpg" alt="Third slide">
+                            <img class="d-block w-100 center-block" src="imgs/sharptop.jpg" alt="Third slide">
                             <div class="container">
-                                <div class="carousel-caption text-center">
+                                <div class="carousel-caption text-center align-items-center">
                                     <h1>Investing, Evolved.</h1>
                                     <h4>We integrate fundamental and quantitative methods to respond to the profound changes that have occurred in markets over the past decade. We are nothing less than the next evolution of investors entering the market based on how it acts now, not how it used to act, or should act.
                                     </h4>
@@ -235,6 +248,14 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#toggleit").click(function () {
+                $("li").toggleClass("nav-bckg");
+            });
+        });
+    </script>
 
 </body>
 

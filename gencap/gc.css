@@ -7,6 +7,7 @@ h1{
     font-size: 3em;
     font-weight: 300;
     color: #fff !important;
+    font-family: 'Open Sans', sans-serif;;
 }
 h4 {
     color: white;
@@ -32,10 +33,16 @@ h4 {
     margin-bottom: 100px;
 }
 
-/* Logo sizing */
 .responsive{
-    max-width: 5%;
+    max-width:5%;
     height: auto;
+}
+
+/******************************************* NAVBAR  *******************************************/
+
+#mainNavbar .navbar-brand {
+    color: white;
+    font-size: 2rem;
 }
 
 .navWrapper{
@@ -50,13 +57,14 @@ h4 {
 #mainNavbar {
     font-size: 1.75rem;
     font-weight: 100;
-    background-color: white;
+    background-color: black;
+    padding-top: 1em;
 }
 
 #mainNavbar .nav-link {
-    color: white;
-    background-color: white;
+    background-color: rgba(0,0,0,0.0);
     position: top;
+    color: rgb(247,247,247);
 }
 
 #mainNavbar .nav-link:hover {
@@ -64,13 +72,17 @@ h4 {
     font-weight:bold;
 }
 
-#mainNavbar .navbar-brand {
-    color: white;
-    font-size: 2rem;
+.navbar-nav > li{
+  padding-left:3.5em;
+  padding-right:3.5em;
+  font-size:.6em;
+  font-weight: bold;
+  background-color: rgba(0,0,0,0);
+  font-family: 'Open Sans', sans-serif;
 }
-/*Navbar dropdown background*/
-.nav-bckg{
-    background-color: blue !important;
+
+.dropdown-menu{
+    color: black;
 }
 
 #headingGroup span {
@@ -80,6 +92,14 @@ h4 {
 #headingGroup h1 {
     font-weight: 100;
     font-size: 4rem;
+}
+
+.nav-bckgh {
+    background: rgba(0,0,0,0);
+}
+
+.nav-bckg {
+    background: black !important;
 }
 
 /************************************************************* CAROUSEL ******************************************************/
@@ -143,6 +163,7 @@ h4 {
 #mainstreet {
     background-image: url('imgs/mainst.jpg');
     background-position: center center;
+    background-size:cover;
 }
 
 #mainstreet:hover h1{
@@ -190,7 +211,26 @@ h4 {
     font-color: white;
 }
 
-/*LOGIN PAGE*/
+/***************************************************** PRINCIPLES & CULTURE ***************************************************/
+
+/* makes background of the collapsible transparent*/
+.card-body{
+    background-color: rgba(200,200,200,0.3);
+}
+
+#principlesbg{
+    background-color: rgba(70,70,70,.7);
+    padding: 3em;
+}
+
+.btnBackgrounder {
+    background-color: rgb(200,200,200);
+}
+button.btn {
+    background-color: rgba(0,0,0,.0);
+}
+
+/************************************************************* LOGIN PAGE *****************************************************/
 
 .login-background{
      background-image: url('imgs/login.JPG') !important;
