@@ -38,24 +38,30 @@
 </head>
 <body>
 	<!-- NAVBAR  -->
-    <nav id="mainNavbar" class="navWrapper navbar navbar-dark navbar-expand-md py-10000 fixed-top">
-        <a href="../index.html" class="navbar-brand"><strong>GenCap</strong></a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+    <nav id="mainNavbar" class="navWrapper navbar navbar-dark navbar-expand-md py-10000 fixed-top navbar-left">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation" id="toggleit">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <a href="#" class="navbar-brand"></a><img src="../imgs/logo.jpeg" class="responsive">
         <div class="collapse navbar-collapse flex-grow-0" id="navLinks">
-            <ul class="navbar-nav nav-bckg">
+            <ul class="navbar-nav nav-bckgh navbar-left">
                 <li class="nav-item">
-                    <a href="../gc-approach.html" class="nav-link">Approach</a>
+                    <a href="../index.html" class="nav-link">MAIN</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../gc-portfolio/gc-portfolio.html" class="nav-link">Portfolio</a>
+                    <a href="../gc-approach.html" class="nav-link">PRINCIPLES & CULTURE</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../gc-team.html" class="nav-link">Our Team</a>
+                    <a href="../gc-research.html" class="nav-link">RESEARCH & INSIGHTS</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../index.html#contacttag" class="nav-link">Contact</a>
+                    <a href="#" class="nav-link">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../gc-team.html" class="nav-link">OUR TEAM</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contacttag" class="nav-link">CONTACT</a>
                 </li>
             </ul>
         </div>
@@ -66,7 +72,7 @@
 		<!--Title-->
         <div class="col-sm-12 text-center mt-5 p-5" >
             <div class="row justify-content-center">
-                <div class="col-10 col-lg-8 blurb">
+                <div class="col-10 col-lg-8 blurb pt-5">
                     <h1>Portfolio Breakdown</h1>
                 </div>
             </div>
@@ -261,5 +267,15 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="gc-portfolio.js"></script>
+
+
+    <!-- Darkens background of dropdown menu in mobile mode -->
+    <script>
+        $(document).ready(function () {
+            $("#toggleit").click(function () {
+                $("li").toggleClass("nav-bckg");
+            });
+        });
+    </script>
 </body>
 </html>
