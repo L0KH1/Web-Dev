@@ -46,19 +46,19 @@ h4 {
 }
 
 .navWrapper{
-    background-image: url("mountainbackground.png") !important;
+    /*background-image: url("mountainbackground.png") !important;*/
     background-size: 50% 50%;
     background-repeat: repeat-x;
     background-position: bottom;
-    height: 100px;
-    padding-bottom: 50px;
+    height: 70px;/*100px;*/
+    /*padding-bottom: 50px;*/
 }
 
 #mainNavbar {
     font-size: 1.75rem;
     font-weight: 100;
-    background-color: black;
-    padding-top: 1em;
+    background-color: rgba(0,0,0,.5);
+    /*padding-top: 1em;*/
 }
 
 #mainNavbar .nav-link {
@@ -73,12 +73,13 @@ h4 {
 }
 
 .navbar-nav > li{
-  padding-left:3.5em;
-  padding-right:3.5em;
+  padding-left:3vw;
+  padding-right:3vw;
   font-size:.6em;
   font-weight: bold;
   background-color: rgba(0,0,0,0);
   font-family: 'Open Sans', sans-serif;
+  white-space:nowrap;
 }
 
 .dropdown-menu{
