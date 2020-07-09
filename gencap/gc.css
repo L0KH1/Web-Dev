@@ -189,9 +189,9 @@ h4 {
     filter:brightness(1.25);
 }
 
-.navbar.scrolled {
+.scrolled {
     color: white;
-    background: rgba(60,60,60,.5);
+    background: black !important;
     transition: background 500ms;
 }
 
