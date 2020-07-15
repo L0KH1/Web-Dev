@@ -34,7 +34,7 @@ h4 {
 }
 
 .responsive{
-    max-width:5%;
+    max-width:5.5%;
     height: auto;
 }
 
@@ -51,14 +51,14 @@ h4 {
     background-repeat: repeat-x;
     background-position: bottom;
     height: 70px;/*100px;*/
-    /*padding-bottom: 50px;*/
 }
 
 #mainNavbar {
     font-size: 1.75rem;
     font-weight: 100;
     background-color: rgba(0,0,0,.5);
-    /*padding-top: 1em;*/
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 
 #mainNavbar .nav-link {
@@ -83,7 +83,7 @@ h4 {
 }
 
 .dropdown-menu{
-    color: black;
+    color: rgba(0,0,0,.5)!important; 
 }
 
 #headingGroup span {
