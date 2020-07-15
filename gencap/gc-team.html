@@ -254,25 +254,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="gc-portfolio.js"></script>
-
-
-    <!-- Darkens background of dropdown menu in mobile mode -->
-    <script>
-        $(document).ready(function () {
-            $("#toggleit").click(function () {
-                $("li").toggleClass("nav-bckg");
-            });
-        });
-    </script>
-
-    <!-- Makes navbar opaque when scrolling-->
-    <script>
-        $(function () {
-            $(document).scroll(function () {
-                var $nav = $("#mainNavbar");
-                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-            });
-        });
-    </script>
+    <script src="gc.js"></script>
 </body>
 </html>

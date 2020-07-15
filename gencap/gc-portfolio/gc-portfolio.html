@@ -42,27 +42,27 @@
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation" id="toggleit">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a href="#" class="navbar-brand"></a><img src="imgs/logo.png" class="responsive">
+        <a href="#" class="navbar-brand"></a><img src="../imgs/logo.png" class="responsive">
 
         <div class="collapse navbar-collapse flex-grow-0" id="navLinks">
             <ul class="navbar-nav nav-bckgh navbar-left">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">MAIN</a>
+                    <a href="../index.html" class="nav-link">MAIN</a>
                 </li>
                 <li class="nav-item">
-                    <a href="gc-approach.html" class="nav-link">PRINCIPLES & CULTURE</a>
+                    <a href="../gc-approach.html" class="nav-link">PRINCIPLES & CULTURE</a>
                 </li>
                 <li class="nav-item">
-                    <a href="gc-research.html" class="nav-link">RESEARCH & INSIGHTS</a>
+                    <a href="../gc-research.html" class="nav-link">RESEARCH & INSIGHTS</a>
                 </li>
                 <li class="nav-item">
                     <a href="gc-portfolio/gc-portfolio.html" class="nav-link">PORTFOLIO</a>
                 </li>
                 <li class="nav-item">
-                    <a href="gc-team.html" class="nav-link">OUR TEAM</a>
+                    <a href="../gc-team.html" class="nav-link">OUR TEAM</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html#contacttag" class="nav-link">CONTACT</a>
+                    <a href="../index.html#contacttag" class="nav-link">CONTACT</a>
                 </li>
             </ul>
         </div>
@@ -268,25 +268,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="gc-portfolio.js"></script>
-
-
-    <!-- Darkens background of dropdown menu in mobile mode -->
-    <script>
-        $(document).ready(function () {
-            $("#toggleit").click(function () {
-                $("li").toggleClass("nav-bckg");
-            });
-        });
-    </script>
-
-    <!-- Makes navbar opaque when scrolling-->
-    <script>
-        $(function () {
-            $(document).scroll(function () {
-                var $nav = $("#mainNavbar");
-                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-            });
-        });
-    </script>
+    <script src="../gc.js"></script>
 </body>
 </html>
