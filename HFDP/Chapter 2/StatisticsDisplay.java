@@ -5,29 +5,36 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class StatisticsDisplay
+public class StatisticsDisplay implements Observer, DisplayElement
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private float maxTemp = 0.0f;
+	private float minTemp = 200;
+	private float tempSum= 0.0f;
+	private int numReadings;
+	private WeatherData weatherData;
 
-    /**
-     * Constructor for objects of class StatisticsDisplay
-     */
-    public StatisticsDisplay()
-    {
-        // initialise instance variables
-        x = 0;
-    }
+	public StatisticsDisplay(WeatherData weatherData) {
+		this.weatherData = weatherData;
+		weatherData.registerObserver(this);
+	}
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+	public void update(float temp, float humidity, float pressure) {
+		tempSum += temp;
+		numReadings++;
+
+		if (temp > maxTemp) {
+			maxTemp = temp;
+		}
+ 
+		if (temp < minTemp) {
+			minTemp = temp;
+		}
+
+		display();
+	}
+
+	public void display() {
+		System.out.println("Avg/Max/Min temperature = " + (tempSum / numReadings)
+			+ "/" + maxTemp + "/" + minTemp);
+	}
 }

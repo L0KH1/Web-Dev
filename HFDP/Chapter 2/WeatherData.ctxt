@@ -1,10 +1,15 @@
 #BlueJ class context
 comment0.target=WeatherData
-comment0.text=\n\ Write\ a\ description\ of\ class\ WeatherData\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
 comment1.target=WeatherData()
-comment1.text=\n\ Constructor\ for\ objects\ of\ class\ WeatherData\n
-comment2.params=y
-comment2.target=int\ sampleMethod(int)
-comment2.text=\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\n\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\n
-numComments=3
+comment2.params=o
+comment2.target=void\ registerObserver(Observer)
+comment3.params=o
+comment3.target=void\ removeObserver(Observer)
+comment4.params=
+comment4.target=void\ notifyObservers()
+comment5.params=
+comment5.target=void\ measurementsChanged()
+comment6.params=temperature\ humidity\ pressure
+comment6.target=void\ setMeasurements(float,\ float,\ float)
+numComments=7
