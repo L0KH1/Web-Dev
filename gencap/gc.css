@@ -1,6 +1,7 @@
 body {
     background: #2e2e2e;
     font-family: apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+    border:none;
 }
 
 h1{
@@ -13,6 +14,22 @@ h4 {
     color: white;
     font-weight: bold;
     font-size: 1.1em;
+}
+
+div {
+    border:none;
+}
+
+section {
+    border:none;
+}
+
+img {
+    border:none;
+}
+.row {
+    margin:0px !important;
+    border:none;
 }
 
 .blurb h2 {
@@ -106,6 +123,10 @@ h4 {
 /************************************************************* CAROUSEL ******************************************************/
 .carousel {
     height: 70vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    object-fit:cover;
+    display:block;
 }
 .carousel-caption {
   transform: translateY(-50%);
@@ -121,9 +142,12 @@ h4 {
 }
 .carousel-inner {
     height: 70vh;
+    width: 100% !important;
 }
 .carousel-inner img{
+    display:block;
     min-height: 70vh !important;
+    object-fit: cover;
 }
 .carousel-fit {
     background-repeat:repeat;
@@ -249,13 +273,16 @@ button.btn {
     background-repeat: repeat;
 }
 .repeat1 {
-    background-image:url('./imgs/rptbackground.jpg')
+    background-image:url('./imgs/rptbackground.jpg');
+    border:none;
 }
 .repeat2 {
-    background-image:url('./imgs/rptbackground2.jpg')
+    background-image:url('./imgs/rptbackground2.jpg');
+    border:none;
 }
 .repeat3 {
-    background-image:url('./imgs/teambackground.jpg')
+    background-image:url('./imgs/teambackground.jpg');
+    border:none;
 }
 
 
